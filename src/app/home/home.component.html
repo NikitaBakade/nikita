@@ -1,0 +1,98 @@
+        <div class="login">
+            <div class="first">
+                <div class="col6">
+                    <h2>Login Page</h2>
+                    <form action="#" [formGroup]="loginForm" (ngSubmit)="newData(loginForm)">
+                            <input type="text" class="txt" placeholder="Email Address" formControlName="email"><br>
+                            <div *ngIf="loginForm.controls['email'].touched && !loginForm.controls['email'].valid">
+                        
+                                <span *ngIf="loginForm.controls['email'].hasError('required')">
+                                    Email is required
+                                </span>
+                                <span *ngIf="loginForm.controls['email'].hasError('email')">
+                                    Email is invalid
+                                </span>
+                            </div>
+                            <br>
+                            <input type="email" class="txt" placeholder="Password" formControlName="password"><br>
+                            <div *ngIf="loginForm.controls['password'].touched && !loginForm.controls['password'].valid">
+                        
+                                <span *ngIf="loginForm.controls['password'].hasError('required')">
+                                    password is required
+                                </span>
+                                <span *ngIf="loginForm.controls['password'].hasError('minlength')">
+                                    password Min Legth:4
+                                </span>
+                                <span *ngIf="loginForm.controls['password'].hasError('maxlength')">
+                                    password Max Legth:12
+                                </span>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn" [disabled]="!loginForm.valid">Login</button>
+                            {{loginForm.valid}}
+                    </form>
+                    {{msg}}
+                </div>
+            </div>   
+            <div class="second">
+                <div class="col6">
+                    <h2>Registration Page</h2>
+                    <form action="#" [formGroup]="registerForm" (ngSubmit)="addData(registerForm)">
+                            <input type="text" class="txt" placeholder="Name" formControlName="name"><br>
+                            <div *ngIf="registerForm.controls['name'].touched && !registerForm.controls['name'].valid">
+                        
+                                <span *ngIf="registerForm.controls['name'].hasError('required')">
+                                    Name is required
+                                </span>
+                                <span *ngIf="registerForm.controls['name'].hasError('minlength')">
+                                    Name Min length:2
+                                </span>
+                                <span *ngIf="registerForm.controls['name'].hasError('maxlength')">
+                                    Name Max length:12
+                                </span>
+                            </div>
+                            <br>
+                            <input type="email" class="txt" placeholder="Email Address" formControlName="email"><br>
+                            <div *ngIf="registerForm.controls['email'].touched && !registerForm.controls['email'].valid">
+                        
+                                <span *ngIf="registerForm.controls['email'].hasError('required')">
+                                    Email is required
+                                </span>
+                                <span *ngIf="registerForm.controls['email'].hasError('email')">
+                                    Email is invalid
+                                </span>
+                            </div>
+                            <br>
+                            <input type="DOB" class="txt" placeholder="DOB" formControlName="dob"><br>
+                            <div *ngIf="registerForm.controls['dob'].touched && !registerForm.controls['dob'].valid">
+
+                            <span *ngIf="registerForm.controls['dob'].hasError('required')">
+                                Age is required
+                            </span>
+                            <span *ngIf="registerForm.controls['dob'].hasError('pattern')">
+                                <!-- Only 2 digit is accepted -->
+                                Date is required in dd/mm/yyyy formate
+                            </span>
+                            </div>
+                            <br>
+                            <input type="password" class="txt" placeholder="Password" formControlName="password"><br>
+                            <div *ngIf="registerForm.controls['password'].touched && !registerForm.controls['password'].valid">
+                        
+                                <span *ngIf="registerForm.controls['password'].hasError('required')">
+                                    password is required
+                                </span>
+                                <span *ngIf="registerForm.controls['password'].hasError('minlength')">
+                                    password Min Legth:4
+                                </span>
+                                <span *ngIf="registerForm.controls['password'].hasError('maxlength')">
+                                    password Max Legth:12
+                                </span>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn" [disabled]="!registerForm.valid">Signup</button>
+                            {{registerForm.valid}}
+                        </form>
+                </div>
+            </div>    
+        </div>
+        

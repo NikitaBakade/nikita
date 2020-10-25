@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "nikita"
+    }
+  },
+  "defaultProject": "nikita",
+  "cli": {
+    "analytics": "8ba5b7c5-7cad-46dd-8e94-d54d6ab61153"
+  }
 }

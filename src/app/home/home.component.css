@@ -1,0 +1,54 @@
+
+.main_header{
+	width: 100%; 
+}
+.header_containt{
+	background-color: black;
+	padding: 35px;
+	padding-left: 50px;
+	font-size: 16px; 
+	height: 20px;
+}
+.header_containt .col5 ul{
+	list-style: none;
+	cursor: pointer;
+}
+.header_containt .col5 li{
+	float: left;
+    padding-left: 40px;
+    color: white;
+}
+.header_containt .col5 li a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+.header_containt .col5 li a:hover{
+	border-bottom:2px solid red;
+	padding-bottom: 18px
+
+}
+
+
+
+.login{
+    padding-top: 100px;
+}
+.login h2{
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+.login .first .col6{
+    padding-left: 400px;
+}
+.login .first .col6 .txt, .login .second .col6 .txt{
+    padding: 10px;
+    padding-right: 50px;
+    background-color: lightgray;
+}
+.login .first .col6 .btn, .login .second .col6 .btn{
+    padding: 10px 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+    background-color: lightseagreen;
+}

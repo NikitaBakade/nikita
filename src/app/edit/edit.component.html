@@ -1,0 +1,24 @@
+<!-- <p>addproduct works!</p> -->
+<section id="form">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-1">
+                <div class="login-form">
+                    <h2>Add Product Form</h2>
+                    
+                    <form action="#" class="data">
+                        <input type="text" name= "name" placeholder="Kurta" class="stxt" #data ><br><br>
+                        <input type="text" name= "newprice" placeholder="New price" class="stxt"><br><br>
+                        <input type="text" name= "oldprice" placeholder="Old Price" class="stxt"><br><br>
+                        <input type="file" name="productImage" class="file" ><br><br>
+                        <textarea name="productdesc" placeholder="Product Details" class="stxt"></textarea><br><br>
+                        <button type="button" class="btn" (click)="add_record(data)">Upload</button>
+                    </form>
+                    <!-- <div id="product_msg"></div> -->
+                </div>
+                <!-- <p *ngIf="msg">Invalid data</p> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <p>{{msg}}</p> -->

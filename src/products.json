@@ -1,0 +1,48 @@
+{
+  "registereduser": [
+    {
+      "id": 1,
+      "name": "nikita",
+      "email": "nikita@gmail.com",
+      "dob": "6-4-99",
+      "password": "aaaa"
+    },
+    {
+      "name": "aa",
+      "email": "aa@aa.com",
+      "dob": "aa",
+      "password": "aaaa",
+      "id": 2
+    },
+    {
+      "name": "akshata",
+      "email": "akshu@b.com",
+      "dob": "06/04/1999",
+      "password": "aaaa",
+      "id": 4
+    }
+  ],
+  "loginuser": [
+    {
+      "email": "akshu@b.com",
+      "password": "aaaa",
+      "id": 1
+    }
+  ],
+  "addedproduct": [
+    {
+      "name": "kk",
+      "newprice": "85",
+      "oldprice": "25",
+      "productdesc": "jbsdsugaid",
+      "id": 1
+    },
+    {
+      "name": "abcd",
+      "newprice": "4785",
+      "oldprice": "3690",
+      "productdesc": "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm",
+      "id": 2
+    }
+  ]
+}
